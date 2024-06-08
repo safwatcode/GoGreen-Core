@@ -1,0 +1,187 @@
+/* Variables */
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --border-radius: 6px;
+}
+
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo";
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: inline-block;
+}
+/* Media */
+
+/* Small Screens */
+
+/* @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  } */
+
+/* Medium Screens */
+
+/* @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  } */
+
+/* Large Screens */
+
+/* @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  } */
+
+/* Components */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #333;
+  bottom: -30px;
+  width: 120px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 0 auto 35px;
+  max-width: 100%;
+  color: #777;
+}
+/*  Navigation bar */
+.nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid var(--secondary-color);
+}
+.nav h1 a {
+  letter-spacing: 1px;
+}
+.nav .logo img {
+  width: 100px;
+  transform: scale(1.35);
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+.nav ul li a {
+  padding: 10px 15px;
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  transition: 0.6s;
+}
+.nav ul li a:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+.label {
+  text-align: center;
+  font-size: 30px;
+  margin: 30px;
+}
+/* Content */
+.career {
+  /* border: 2px solid var(--secondary-color); */
+  /* border-radius: var(--border-radius); */
+  width: 750px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.career img {
+  width: 150px;
+}
+.worker,
+.customer {
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.6s;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+}
+.worker:hover,
+.customer:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
+.card-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* .worker a,
+.customer a {
+  display: inline-block;
+  border: 2px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  transition: 0.4s;
+}  */
+.worker a:hover,
+.customer a:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+/* END Content */

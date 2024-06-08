@@ -1,0 +1,92 @@
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --border-radius: 6px;
+}
+
+/* Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo";
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* Sign up */
+.welcome {
+  text-align: center;
+  margin: 40px 0;
+}
+.reg-form {
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.reg-form img {
+  width: 400px;
+}
+.reg-form form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reg-form form .full-name {
+  display: flex;
+}
+.reg-form form .full-name input {
+  width: 165px;
+  gap: 10px;
+}
+.reg-form form input, .reg-form form button {
+  margin: 10px;
+  padding: 15px;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+  border-radius: var(--border-radius);
+  width: 350px;
+}
+.reg-form form button {
+  cursor: pointer;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  width: 175px;
+  transition: 0.4s;
+}
+.reg-form form button:hover {
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+.reg-form form input::placeholder {
+  color: var(--secondary-color);
+}
+.reg-form form input:focus::placeholder {
+  color: transparent;
+}
+.new-account {
+  margin: 20px 0;
+  text-align: center;
+}
+.new-account a {
+  border-bottom: 2px solid var(--secondary-color);
+  font-weight: bold;
+}
