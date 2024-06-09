@@ -13,6 +13,9 @@
   --varyDarkBlue: hsl(234, 12%, 34%);
   --grayishBlue: hsl(229, 6%, 66%);
   --veryLightGray: hsl(0, 0%, 98%);
+  --dark-color: #111827;
+  --dark-violet-color: #a78bfa;
+  --light-violet-color: #7d2ae8;
   --weight1: 200;
   --weight2: 400;
   --weight3: 600;
@@ -110,7 +113,6 @@ a {
 /*  Navigation bar */
 .nav {
   width: 100%;
-  height: 120px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -183,22 +185,32 @@ a {
   letter-spacing: 12px;
 }
 /* Brief */
-
+.brief-container {
+  background-color: var(--dark-color);
+  color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.brief-container img {
+  /* background-color: var(--dark-color); */
+  /* border-radius: var(--border-radius); */
+  width: 400px;
+}
 .brief {
-  width: 70%;
-  padding: 20px;
+  width: 50%;
   text-align: center;
-  font-size: 26px;
-  margin: 5px auto;
+  font-size: 20px;
   line-height: 2;
-  text-wrap: wrap;
+  margin-bottom: 20px;
 }
 .brief .website {
   font-weight: 900;
   font-size: 35px;
 }
 .brief .egy {
-  border-bottom: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--dark-violet-color)
 }
 /* END Brief */
 
@@ -276,10 +288,10 @@ a {
     top: 150px;
   }
   .box {
-    width: 20%;
+    width: 30%;
   }
   .header p {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -423,12 +435,10 @@ a {
   font-size: inherit;
   font-family: inherit;
 }
-
 button.learn-more {
   width: 12rem;
   height: auto;
 }
-
 button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
@@ -439,7 +449,6 @@ button.learn-more .circle {
   background: #282936;
   border-radius: 1.625rem;
 }
-
 button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -455,7 +464,6 @@ button.learn-more .circle .icon.arrow {
   height: 0.125rem;
   background: none;
 }
-
 button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
@@ -467,7 +475,6 @@ button.learn-more .circle .icon.arrow::before {
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
 }
-
 button.learn-more .button-text a {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
@@ -494,78 +501,11 @@ button.learn-more .button-text a {
   color: #f2f2f2;
 }
 /* Newsletter */
-/* 
-.subscribe {
-  margin-top: 60px;
-  background-image: url("images/subscribe.jpg");
-  background-size: cover;
-  position: relative;
-  color: var(--main-color);
-}
-.sub {
-  color: var(--main-color) !important;
-}
-.subscribe::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0 0 0 / 50%);
-}
-.subscribe .container {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.subscribe form {
-  display: flex;
-  position: relative;
-  width: 500px;
-}
-.subscribe form i {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 25px;
-}
-.subscribe form input[type="email"] {
-  border: 1px solid var(--main-color);
-  border-right: none;
-  background: transparent;
-  padding: 20px 20px 20px 60px;
-  color: var(--main-color);
-  caret-color: var(--main-color);
-  width: calc(100% - 130px);
-}
-.subscribe form input[type="submit"] {
-  width: 130px;
-  background-color: var(--secondary-color);
-  color: var(--main-color);
-  padding: 10px 20px;
-  border: 1px solid white;
-  border-left: white;
-  text-transform: uppercase;
-  transition: 0.4s;
-}
-.subscribe form input:hover[type="submit"] {
-  background-color: transparent;
-  color: var(--main-color);
-  cursor: pointer;
-}
-.subscribe form input[type="email"]:focus,
-.subscribe form input[type="submit"]:focus {
-  outline: none;
-}
-.subscribe form::placeholder {
-  color: var(--main-color);
-} */
 .subscribe {
   margin-top: 70px;
-  background-image: url("../Images/subscribe.jpg");
+  background-image: url("/images/newsletter1.png");
   background-size: cover;
+  background-position: center;
   position: relative;
   color: white;
 }
@@ -587,6 +527,11 @@ button.learn-more .button-text a {
 @media (max-width: 991px) {
   .subscribe .container {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .subscribe form {
+    margin: 30px;
   }
 }
 .subscribe form {
@@ -609,21 +554,24 @@ button.learn-more .button-text a {
   padding: 20px 20px 20px 60px;
   width: calc(100% - 130px);
 }
-.subscribe form input[type="submit"] {
+.subscribe form button {
   width: 130px;
-  background-color: var(--secondary-color);
-  color: white;
+  background-color: var(--dark-violet-color);
+  color: var(--dark-color);
+  font-weight: 600;
   padding: 10px 20px;
   border: 1px solid white;
-  border-left: white;
+  border-left: #f2f2f2;
   text-transform: uppercase;
+  transition: 0.4s;
 }
-.subscribe form input:hover[type="submit"] {
+.subscribe form button:hover {
   background-color: transparent;
+  color: #f2f2f2;
   cursor: pointer;
 }
 .subscribe form input[type="email"]:focus,
-.subscribe form input[type="submit"]:focus {
+.subscribe form button:focus {
   outline: none;
 }
 .subscribe form ::placeholder {
@@ -949,7 +897,7 @@ section {
 
 /* Footer */
 footer {
-  background-image: url("images/Zfooterjpg.jpg");
+  background-image: url("/images/Zfooterjpg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;

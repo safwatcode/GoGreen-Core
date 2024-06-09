@@ -73,7 +73,7 @@
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img decoding="async" src="images/shattablyLogo.svg" alt="Logo" />
+            <img src="images/shattablyLogo.svg" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
@@ -85,7 +85,7 @@
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <p class="copyright"> &copy; 2024 <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
+            <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
@@ -94,8 +94,31 @@
 
 
 
+
+
+
+
+    <!-- ===================== JS Files ===================== -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/bab5d0d7f7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 
 </body>
 

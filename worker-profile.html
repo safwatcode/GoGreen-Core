@@ -32,14 +32,22 @@
       <a href="index.html" class="logo">
         <img src="images/shattablyLogo.svg" alt="website-logo">
       </a>
-      <ul>
+      <!-- <ul>
         <li>
           <a href="cus-wo-sign-in.html">Sign in</a>
         </li>
         <li>
           <a href="cus-wo-register.html">Register</a>
         </li>
-      </ul>
+      </ul> -->
+      <div class="profile-image-container">
+        <span class="notification p-relative">
+          <i class="fa-regular fa-bell fa-lg"></i>
+        </span>
+        <a href="worker-profile.html" class="pro-img">
+          <img src="images/worker_avatar.png" alt="" class="profile-image">
+        </a>
+      </div>
     </div>
   </nav>
   <!-- ===================== END Navigation Bar ===================== -->
@@ -55,7 +63,7 @@
       </div>
       <div class="links-container">
         <a href="#" class="button edit-profile">Edit Profile</a>
-        <a href="#" class="button">Logout</a>
+        <a href="index.html" class="button">Logout</a>
       </div>
     </div>
   </div>
@@ -71,11 +79,17 @@
         <p>+20 1125285475</p>
       </div>
       <div class="billing-info">
-        <h2>Subscribtion</h2>
-        <h3>Free</h3>
+        <div class="job">
+          <h2>Job</h2>
+          <h3>Door Installation Specialiest</h3>
+        </div>
+        <div class="service">
+          <h2>Servise</h2>
+          <h3>Window and Door Installation</h3>
+        </div>
       </div>
     </div>
-  
+
     <div class="table-section">
       <div class="section-title">Order History</div>
       <table class="table">
@@ -83,7 +97,7 @@
           <tr>
             <th>Order</th>
             <th>Date</th>
-            <th>Items</th>
+            <th>Customers</th>
             <th>Total</th>
             <th>Status</th>
           </tr>
@@ -93,7 +107,7 @@
             <td>#3103</td>
             <td>June 23, 2024</td>
             <td>
-              <p>- Architectural Engineering <span>(Mohsen Sayed)</span></p>
+              <p> Mohamed Ahmed</span></p>
             </td>
             <td>
               <p>8000 L.E.</p>
@@ -104,8 +118,8 @@
             <td>#3102 <br> #3101</td>
             <td>May 15, 2024 <br> June 7, 2024</td>
             <td>
-              <p>- Architectural Engineering <span>(Ahmed Moustafa)</span></p>
-              <p>- Roof Installation <span>(Ebrahim Mohammed)</span></p>
+              <p> Magdy Zaghloul</span></p>
+              <p> Magdy Zaghloul</span></p>
             </td>
             <td>
               <p>8000 L.E.</p>
@@ -117,7 +131,7 @@
             <td>#3100</td>
             <td>April 2, 2024</td>
             <td>
-              <p>- Floor Installation <span>(Mohamed Saeed)</span> </p>
+              <p>Sayed Ahmed</span> </p>
             </td>
             <td>
               <p>4500 L.E.</p>
@@ -129,28 +143,38 @@
     </div>
   </div>
 
-  <!-- ===================== Footer ===================== -->
-  <footer>
-    <div class="container">
-      <img src="images/shattablyLogo.svg" alt="Logo" />
-      <p>We are social</p>
-      <div class="social-icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin"></i>
+    <!-- ===================== Footer ===================== -->
+    <footer>
+      <div class="container">
+          <img src="images/shattablyLogo.svg" alt="Logo" />
+          <p>We are social</p>
+          <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="policy">
+              <a href="terms.html" class="ter">Terms and Conditions</a>
+              <a href="privacy.html" class="pol">Privacy Policy</a>
+          </div>
+          <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved.
+          </p>
       </div>
-      <div class="policy">
-        <a href="terms.html" class="ter">Terms and Conditions</a>
-        <a href="privacy.html" class="pol">Privacy Policy</a>
-      </div>
-      <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
-    </div>
   </footer>
   <!-- ===================== END Footer ===================== -->
 
 
 
+
+
+
+
+
+
+  <!-- ===================== JS Files ===================== -->
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/bab5d0d7f7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

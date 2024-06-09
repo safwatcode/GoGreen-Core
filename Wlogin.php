@@ -32,7 +32,7 @@ if(!isset($errors)){
     // echo $email;
     // echo $password;
     if($row['email'] === $email && $row['password'] === $pass_md5){  
-        header('Location: worker-profile.html');
+        header('Location: worker-index.html');
         exit();
     }else{
         $erroremail = "Invalid Email or Password";
