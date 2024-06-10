@@ -122,9 +122,6 @@ a {
   letter-spacing: 1px;
   transition: 0.6s;
 }
-.nav h1 a:hover {
-  transform: scale(1.1);
-}
 .nav .logo img {
   width: 100px;
 }
@@ -210,7 +207,7 @@ a {
   font-size: 35px;
 }
 .brief .egy {
-  border-bottom: 3px solid var(--dark-violet-color)
+  border-bottom: 3px solid var(--dark-violet-color);
 }
 /* END Brief */
 
@@ -897,21 +894,29 @@ section {
 
 /* Footer */
 footer {
-  background-image: url("/images/Zfooterjpg.jpg");
-  background-size: cover;
+  /* background-image: url("/images/Zfooterjpg.jpg"); */
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
-  color: var(--main-color);
-  text-align: center;
+  background-position: bottom; */
+  background-color: var(--dark-color);
+  color: #f2f2f2;
+  /* text-align: center; */
   margin-top: 50px;
 }
 footer .container {
   margin: 0 auto;
   transition: 0.9s;
+  text-align: center;
+
 }
 footer .container img {
   width: 150px;
   height: 150px;
+    text-align: center;
+
+}
+footer .container > p {
+  color: #f2f2f2;
 }
 footer .container .social-icons {
   font-size: 20px;
@@ -938,8 +943,10 @@ footer .container .social-icons i {
   margin: 50px auto;
 }
 .policy a {
-  color: #3e3a34;
-  padding-left: 20px;
+  color: var(--dark-violet-color);
+}
+.policy .pol {
+  margin-left: 30px;
 }
 .ter:hover,
 .pol:hover {
@@ -954,13 +961,13 @@ footer p:not(.copyright) {
   margin: 20px auto;
 }
 footer .copyright {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: var(--secondary-color);
+  padding: 20px 0;
+  color: #f2f2f2;
+  text-align: center;
 }
 footer .copyright a {
   font-weight: bold;
-  color: var(--main-color);
+  color: var(--dark-violet-color);
   cursor: pointer;
 }
 
