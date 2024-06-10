@@ -1,8 +1,24 @@
+/* === Google Font Import - Poppins === */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 /* Variables */
 :root {
   --main-color: #ffffff;
   --secondary-color: #000000;
   --border-radius: 6px;
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --varyDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --dark-color: #111827;
+  --dark-violet-color: #a78bfa;
+  --light-violet-color: #7d2ae8;
+  --weight1: 200;
+  --weight2: 400;
+  --weight3: 600;
 }
 
 /* Global Rules */
@@ -131,8 +147,6 @@ a {
 }
 /* Content */
 .career {
-  /* border: 2px solid var(--secondary-color); */
-  /* border-radius: var(--border-radius); */
   width: 750px;
   padding: 20px;
   margin: 20px auto;
@@ -146,7 +160,7 @@ a {
 }
 .worker,
 .customer {
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--dark-color);
   border-radius: var(--border-radius);
   width: 300px;
   height: 400px;
@@ -156,27 +170,20 @@ a {
   justify-content: space-around;
   align-items: center;
   transition: 0.6s;
-  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  box-shadow: 0px 30px 40px -20px var(--dark-color);
+  /* background-color: var(--dark-color);
+  color: #f2f2f2; */
 }
 .worker:hover,
 .customer:hover {
   cursor: pointer;
   transform: scale(1.05);
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
+  box-shadow: 0px 30px 40px -20px var(--dark-color);
 }
 .card-title {
   font-weight: bold;
   font-size: 20px;
 }
-/* .worker a,
-.customer a {
-  display: inline-block;
-  border: 2px solid var(--secondary-color);
-  border-radius: var(--border-radius);
-  padding: 10px 15px;
-  transition: 0.4s;
-}  */
 .worker a:hover,
 .customer a:hover {
   background-color: var(--secondary-color);

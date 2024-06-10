@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <!-- ===================== Navigation Bar ===================== -->
     <nav class="navigation">
         <div class="nav">
@@ -53,7 +52,6 @@
     <!-- ===================== END Navigation Bar ===================== -->
 
     <!-- ===================== Profile Content ===================== -->
-
     <div class="header">
         <div class="account-info">
             <div class="acc-name">
@@ -73,14 +71,11 @@
                 <p>ahmedmostafa1998@gmail.com</p>
                 <div class="label">Phone:</div>
                 <p>+20 1125285475</p>
-                <p>Rating</p>
-                <div class="worker-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <span>4.7</span>
+                <div class="current-price">
+                    <div class="label">Current Cost:</div>
+                    <p>8000 L.E.</p>
+                    <!-- <input type="text" value="8000 L.E." class="worker-cost" disabled />
+                    <button  type="button" class="edit-cost">Edit</button> -->
                 </div>
             </div>
             <div class="billing-info">
@@ -92,10 +87,21 @@
                     <h2>Servise</h2>
                     <h3>Window and Door Installation</h3>
                 </div>
-                <div class="cost">
-                    <h2>Cost</h2>
-                    <h3>8000 L.E.</h3>
+                <div class="rating">
+                    <h2>Rating</h2>
+                    <h3 class="worker-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7</span>
+                    </h3>
                 </div>
+            </div>
+            <div class="total-orders">
+                <h2>Total orders</h2>
+                <h3 class="worker-orders">30</h3>
             </div>
         </div>
 
@@ -140,7 +146,6 @@
             </table>
         </div>
     </div>
-
     <!-- ===================== END Profile Content ===================== -->
 
     <!-- ===================== Checkout ===================== -->
@@ -173,10 +178,11 @@
         </div>
     </div>
     <!-- ===================== END Checkout ===================== -->
+
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img src="images/shattablyLogo.svg" alt="Logo" />
+            <img src="images/SHATTABLYwhite.png" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
@@ -188,8 +194,9 @@
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved.
-            </p>
+            <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a>. All Right
+                Reserved.
+            </div>
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
