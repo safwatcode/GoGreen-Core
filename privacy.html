@@ -42,7 +42,9 @@
         h3 {
             text-align: center;
         }
-
+        li {
+            list-style-type: none;
+        }
         ul {
             list-style-type: disc;
         }
@@ -50,9 +52,31 @@
 </head>
 
 <body>
+    
+    <!-- ===================== Navigation Bar ===================== -->
+    <nav class="navigation">
+        <div class="nav">
+            <h1>
+                <a href="index.html" target="_self">SHATTABLY</a>
+            </h1>
+            <a href="index.html" class="logo">
+                <img src="images/shattablyLogo.svg" alt="website-logo">
+            </a>
+            <ul>
+                <li>
+                    <a href="cus-wo-sign-in.html">Sign in</a>
+                </li>
+                <li>
+                    <a href="cus-wo-register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ===================== END Navigation Bar ===================== -->
+
     <div class="logo">
         <a href="index.html" class="logo">
-            <img src="images/Black and White Minimal Monogram Logo.svg" alt="website-logo">
+            <img src="images/shattablyLogo.svg" alt="website-logo">
         </a>
     </div>
 
@@ -143,12 +167,11 @@
 
    
     <p>By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
-    <!-- ===================== Footer ===================== -->
 
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img decoding="async" src="images/Black and White Minimal Monogram Logo.svg" alt="Logo" />
+            <img src="images/SHATTABLYwhite.png" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
@@ -160,14 +183,14 @@
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <p class="copyright"> &copy; 2024 <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
+            <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a>. All Right
+                Reserved.
+            </div>
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
 
-    <!-- ===================== END Footer ===================== -->
-
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/bab5d0d7f7.js" crossorigin="anonymous"></script>
 </body>
 

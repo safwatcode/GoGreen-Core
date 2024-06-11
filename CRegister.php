@@ -1,6 +1,5 @@
 <?php
 include('connect.php');
-// echo "gg";    
 if (isset($_POST['submit'])) {
 
     $firstname = stripcslashes(strtolower($_POST['firstname']));
@@ -16,19 +15,12 @@ if (isset($_POST['submit'])) {
     $phone  = htmlentities(mysqli_real_escape_string($conn, $_POST['phone']));
     $md5_pass = md5($password);
 
-    // echo $firstname;
-    // echo $lastname;
-    // echo $password;
-    // echo $email;
-    // echo $phone;
-    // echo $md5_pass;    
-
 
     if (empty($firstname)) {
         $firstname_error = "<p class='error' style='color: red;'>Enter your first name</p>";
         $err_s = 1;
     } elseif (strlen($firstname) < 2) {
-        $firstname_error = "first name must be more than one character";
+        $firstname_error = "first name must be more than two characters";
         $err_s = 1;
     } elseif (filter_var($firstname, FILTER_VALIDATE_INT)) {
         $firstname_error = "firstname cannot be numbers";
@@ -40,7 +32,7 @@ if (isset($_POST['submit'])) {
         $lastname_error = "<p class='error' style ='color: red;'>Enter your last name</p>";
         $err_s = 1;
     } elseif (strlen($lastname) < 2) {
-        $lastname_error = "Last name must be more than one character";
+        $lastname_error = "Last name must be more than two characters";
         $err_s = 1;
     } elseif (filter_var($lastname, FILTER_VALIDATE_INT)) {
         $lastname_error = "lastname cannot be numbers";
@@ -73,7 +65,6 @@ if (isset($_POST['submit'])) {
             VALUES ('$firstname' , '$lastname' , '$email' , '$md5_pass' , '$phone')";
             mysqli_query($conn, $sql);
             header("location: customer-profile.html");
-            // echo "true";
         } else {
             include('customer-register.php');
         }

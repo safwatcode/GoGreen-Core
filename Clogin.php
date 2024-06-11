@@ -20,7 +20,6 @@ if (empty($email)) {
 if (empty($password)) {
     $password_error = "<p  style = 'color: red;'> Enter your password</p>";
     $errors = 1;
-    include('customer-sign-in.php');
 }
 if (empty($customer_phone)) {
     $customer_phone_error = "<p  style = 'color: red;'> Enter your phone number</p>";
@@ -32,10 +31,6 @@ if (!isset($errors)) {
     $sql = "SELECT `email` , `password` , `phone-number` FROM `customer` WHERE `email` = '$email' AND `password` = '$pass_md5' ";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
-    // echo $row['email'];
-    // echo $row['password'];
-    // echo $email;
-    // echo $password;
 
     if ($row['email'] === $email && $row['password'] === $pass_md5 && $row['phone-number'] === $customer_phone) {
         header('Location: customer-profile.html');
