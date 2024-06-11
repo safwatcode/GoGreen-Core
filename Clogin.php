@@ -6,20 +6,28 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
     $pass_md5 = md5($_POST['password']);
     $username = filter_input(INPUT_POST, 'username');
     $password = stripcslashes(strtolower($_POST['password']));
+    // $customer_phone = stripcslashes(strtolower($_POST['customer-phone']));
     $email  = htmlentities(mysqli_real_escape_string($conn, $_POST['email']));
     $password  = htmlentities(mysqli_real_escape_string($conn, $_POST['password']));
+    // $customer_phone  = htmlentities(mysqli_real_escape_string($conn, $_POST['customer-phone']));
 }
 
 if (empty($email)) {
-    $email_error = "<p> Enter your email</p>";
+    $email_error = "<p style = 'color: red;'> Enter your email</p>";
     $errors = 1;
 }
 
 if (empty($password)) {
-    $password_error = "<p> Enter your password</p>";
+    $password_error = "<p  style = 'color: red;'> Enter your password</p>";
     $errors = 1;
     include('customer-sign-in.php');
 }
+// if (empty($customer_phone)) {
+//     $customer_phone_error = "<p  style = 'color: red;'> Enter your phone number</p>";
+//     $errors = 1;
+//     include('customer-sign-in.php');
+// }
+
 // else{
 //     include('sign-in.php');
 // }
@@ -31,6 +39,7 @@ if (!isset($errors)) {
     // echo $row['password'];
     // echo $email;
     // echo $password;
+
     if ($row['email'] === $email && $row['password'] === $pass_md5) {
         header('Location: customer-profile.html');
         exit();
@@ -39,3 +48,5 @@ if (!isset($errors)) {
         include('customer-sign-in.php');
     }
 }
+
+// && $row['phone-number'] === $customer_phone

@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ===================== Arabic Language ===================== -->
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_6c5321196b2403ec28a981605a02560b8'
+    });
+</script>
+<!-- ===================== END Arabic Language ===================== -->
 
 <head>
     <meta charset="UTF-8">

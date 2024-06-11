@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ===================== Arabic Language ===================== -->
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_6c5321196b2403ec28a981605a02560b8'
+    });
+</script>
+<!-- ===================== END Arabic Language ===================== -->
 
 <head>
     <meta charset="UTF-8">
@@ -51,29 +59,38 @@
             }
             ?>
             <input type="email" class="email" name="email" placeholder="Email">
-            <?php
-            if (isset($email_error)) {
-                echo $email_error;
-            }
-            ?>
+            <div class="email-error">
+                <?php
+                if (isset($email_error)) {
+                    echo $email_error;
+                }
+                ?>
+            </div>
+
             <input type="password" class="pass" name="password" placeholder="Password">
-            <?php
-            if (isset($password_error)) {
-                echo $password_error;
-            }
-            ?>
-            <button type="submit" class="submit"> submit </button>
-            <div class="forgot-password">Forgot password?</div>
+            <div class="password-error">
+                <?php
+                if (isset($password_error)) {
+                    echo $password_error;
+                }
+                ?>
+            </div>
+            <button type="submit" class="submit"> Sign in </button>
+            <a href="forgot-password.html">
+                <div class="forgot-password">Forgot password? </div>
+            </a>
+
             <div class="new-account">New account? <a href="cus-wo-register.html">Register</a></div>
         </form>
     </div>
 
 
 
+
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img src="images/shattablyLogo.svg" alt="Logo" />
+            <img src="images/SHATTABLYwhite.png" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
@@ -85,10 +102,15 @@
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
+            <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a>. All Right
+                Reserved.
+            </div>
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
+
+
+
 
 
 

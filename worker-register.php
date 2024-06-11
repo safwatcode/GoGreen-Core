@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ===================== Arabic Language ===================== -->
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_6c5321196b2403ec28a981605a02560b8'
+    });
+</script>
+<!-- ===================== END Arabic Language ===================== -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Worker | Register</title>
+    <title> Worker Register | SHATTABLY</title>
     <!-- Title Icon -->
     <link rel="icon" type="image/png" href="images/shattablyLogo.svg" />
     <!-- Render All Elements Normally -->
@@ -44,23 +52,18 @@
     <div class="reg-form">
         <img src="images/register-photo.jpg" alt="website-logo">
         <form action="WRegister.php" method="POST">
-            <div class="full-name">
-                <input type="text" class="f-name" name="firstname" placeholder="First name">
-                <div class="fullname-php" style="color: red;">
-                    <?php
-                    if (isset($firstname_error)) {
-                        echo $firstname_error;
-                    }
-                    ?>
-                </div>
-
-                <?php
-                if (isset($lastname_error)) {
-                    echo $lastname_error;
-                }
-                ?>
-                <input type="text" class="l-name" name="lastname" placeholder="Last name">
-            </div>
+            <?php
+            if (isset($firstname_error)) {
+                echo $firstname_error;
+            }
+            ?>
+            <input type="text" class="f-name" name="firstname" placeholder="First name">
+            <?php
+            if (isset($lastname_error)) {
+                echo $lastname_error;
+            }
+            ?>
+            <input type="text" class="l-name" name="lastname" placeholder="Last name">
             <?php
             if (isset($email_error)) {
                 echo $email_error;
@@ -84,7 +87,8 @@
                 echo $phone_error;
             }
             ?>
-            <input type="tel" class="phone" name="phone" placeholder="Phone number" required>
+            <input type="tel" class="phone" name="phone" placeholder="Phone number">
+
             <button name="submit" class="submit">Submit</button>
             <div class="new-account">Already have an account? <a href="worker-sign-in.html">Sign in</a></div>
         </form>
@@ -93,7 +97,7 @@
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img src="images/shattablyLogo.svg" alt="Logo" />
+            <img src="images/SHATTABLYwhite.png" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
@@ -105,7 +109,9 @@
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
+            <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a>. All Right
+                Reserved.
+            </div>
         </div>
     </footer>
     <!-- ===================== END Footer ===================== -->
@@ -118,10 +124,9 @@
 
 
 
-
+    <!-- ===================== JS Files ===================== -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/bab5d0d7f7.js" crossorigin="anonymous"></script>
-
 </body>
 
 </html>

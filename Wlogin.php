@@ -11,12 +11,12 @@ if( isset($_POST['email']) &&  isset($_POST['password']) ){
 }
 
 if(empty($email)){
-    $email_error = "<p> Enter your email</p>";
+    $email_error = "<p class = 'email-error' style = 'color: red;'> Enter your email</p>";
     $errors = 1 ;
 }
 
 if(empty($password)){
-    $password_error = "<p> Enter your password</p>";
+    $password_error = "<p class = 'password-error'  style = 'color: red;'> Enter your password</p>";
     $errors = 1 ;
     include('worker-sign-in.php');
 }

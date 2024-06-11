@@ -18,19 +18,18 @@ if (isset($_POST['submit'])) {
 
 
     if (empty($firstname)) {
-        $firstname_error = 'required';
+        $firstname_error = "<p class='error' style='color: red;'>Enter your first name</p>";
         $err_s = 1;
     } elseif (strlen($firstname) < 2) {
-        $firstname_error = "First name must be letters only.";
+        $firstname_error = "First name must be letters only";
         $err_s = 1;
     } elseif (filter_var($firstname, FILTER_VALIDATE_INT)) {
-        $firstname_error = "First name must be letters only.";
+        $firstname_error = "First name must be letters only";
         $err_s = 1;
     }
 
-
     if (empty($lastname)) {
-        $lastname_error = 'required';
+        $lastname_error = "<p class='error' style ='color: red;'>Enter your last name</p>";
         $err_s = 1;
     } elseif (strlen($lastname) < 2) {
         $lastname_error = "First name must be letters only";
@@ -42,22 +41,22 @@ if (isset($_POST['submit'])) {
 
 
     if (empty($email)) {
-        $email_error = "Email can not be empty";
+        $email_error = "<p class='error' style ='color: red;'>Email can not be empty</p>";
         $err_s = 1;
     }
 
     if ($password != $c_password) {
-        $c_password_error = 'Password does not match';
+        $c_password_error = "<p class='error' style ='color: red;'>Password does not match</p>";
         $err_s = 1;
     }
 
     if (empty($password)) {
-        $password_error = 'Passowrd can not be empty';
+        $password_error = "<p class='error' style ='color: red;'>Password can not be empty</p>";
         $err_s = 1;
     }
 
     if (empty($phone)) {
-        $phone_error = 'Phone can not be empty';
+        $phone_error = "<p class='error' style ='color: red;'>Phone number can not be empty</p>";
         $err_s = 1;
         include('worker-register.php');
     } else {

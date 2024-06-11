@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- ===================== Arabic Language ===================== -->
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_6c5321196b2403ec28a981605a02560b8'
+    });
+</script>
+<!-- ===================== END Arabic Language ===================== -->
 
 <head>
   <meta charset="UTF-8">
@@ -32,14 +40,22 @@
       <a href="index.html" class="logo">
         <img src="images/shattablyLogo.svg" alt="website-logo">
       </a>
-      <ul>
+      <!-- <ul>
         <li>
           <a href="cus-wo-sign-in.html">Sign in</a>
         </li>
         <li>
           <a href="cus-wo-register.html">Register</a>
         </li>
-      </ul>
+      </ul> -->
+      <div class="profile-image-container">
+        <span class="notification p-relative">
+          <i class="fa-regular fa-bell fa-lg"></i>
+        </span>
+        <a href="worker-profile.html" class="pro-img">
+          <img src="images/worker_avatar.png" alt="" class="profile-image">
+        </a>
+      </div>
     </div>
   </nav>
   <!-- ===================== END Navigation Bar ===================== -->
@@ -49,13 +65,13 @@
       <div class="acc-name">
         <img src="images/worker-avatar2.jpg" alt="Profile Picture">
         <div class="acc2">
-          <h2>Ahmed Moustafa</h2>
-          <p class="customer-email">ahmedmostafa1998@gmail.com</p>
+          <h2>Safwat Ahmed</h2>
+          <p class="customer-email">codeman@gmail.com</p>
         </div>
       </div>
       <div class="links-container">
         <a href="#" class="button edit-profile">Edit Profile</a>
-        <a href="#" class="button">Logout</a>
+        <a href="index.html" class="button">Logout</a>
       </div>
     </div>
   </div>
@@ -64,9 +80,9 @@
       <div class="sec-info">
         <h2 class="section-title">Personal Information</h2>
         <div class="label">Email:</div>
-        <p>ahmedmostafa1998@gmail.com</p>
+        <p>codeman@gmail.com</p>
         <div class="label">Address:</div>
-        <p>123 Main St, Cairo, Egypt</p>
+        <p>Elsalam city, Cairo, Egypt</p>
         <div class="label">Phone:</div>
         <p>+20 1125285475</p>
       </div>
@@ -74,8 +90,12 @@
         <h2>Subscribtion</h2>
         <h3>Beginner - Free</h3>
       </div>
+      <div class="total-orders">
+        <h2>Total Orders</h2>
+        <h3 class="worker-orders">3</h3>
+      </div>
     </div>
-  
+
     <div class="table-section">
       <div class="section-title">Order History</div>
       <table class="table">
@@ -132,7 +152,7 @@
   <!-- ===================== Footer ===================== -->
   <footer>
     <div class="container">
-      <img src="images/shattablyLogo.svg" alt="Logo" />
+      <img src="images/SHATTABLYwhite.png" alt="Logo" />
       <p>We are social</p>
       <div class="social-icons">
         <i class="fab fa-facebook-f"></i>
@@ -144,13 +164,24 @@
         <a href="terms.html" class="ter">Terms and Conditions</a>
         <a href="privacy.html" class="pol">Privacy Policy</a>
       </div>
-      <p class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a> All Right Reserved. </p>
+      <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a>. All Right
+        Reserved.
+      </div>
     </div>
   </footer>
   <!-- ===================== END Footer ===================== -->
 
 
 
-</body>
 
+
+
+
+
+
+  <!-- ===================== JS Files ===================== -->
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/bab5d0d7f7.js" crossorigin="anonymous"></script>
+
+</body>
 </html>
