@@ -110,6 +110,29 @@ a {
   max-width: 100%;
   color: #777;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  z-index: 99;
+  border: 2px solid var(--dark-violet-color);
+  outline: none;
+  background-color: var(--dark-violet-color);
+  color: var(--dark-color);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#myBtn i {
+  position: relative;
+  transition: 0.4s;
+}
+#myBtn:hover i {
+  bottom: 2px;
+}
 /*  Navigation bar */
 .nav {
   width: 100%;
@@ -544,7 +567,7 @@ button.learn-more .button-text a {
 /* Newsletter */
 .subscribe {
   margin-top: 70px;
-  background-image: url("/images/newsletter1.png");
+  background-image: url("/images/newsletter2.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -564,6 +587,7 @@ button.learn-more .button-text a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 @media (max-width: 991px) {
   .subscribe .container {

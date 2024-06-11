@@ -52,7 +52,6 @@
     <div class="reg-form">
         <img src="images/register-photo.jpg" alt="website-logo">
         <form action="CRegister.php" method="POST">
-            <div class="full-name">
                 <?php 
                     if(isset($firstname_error)){
                         echo $firstname_error;
@@ -65,7 +64,6 @@
                     }
                 ?>
                 <input type="text" class="l-name" name="lastname" placeholder="Last name">
-            </div>
             <?php 
                     if(isset($email_error)){
                         echo $email_error;

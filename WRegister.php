@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         $firstname_error = "<p class='error' style='color: red;'>Enter your first name</p>";
         $err_s = 1;
     } elseif (strlen($firstname) < 2) {
-        $firstname_error = "First name must be letters only";
+        $firstname_error = "First name must be more than one character";
         $err_s = 1;
     } elseif (filter_var($firstname, FILTER_VALIDATE_INT)) {
         $firstname_error = "First name must be letters only";
@@ -32,7 +32,7 @@ if (isset($_POST['submit'])) {
         $lastname_error = "<p class='error' style ='color: red;'>Enter your last name</p>";
         $err_s = 1;
     } elseif (strlen($lastname) < 2) {
-        $lastname_error = "First name must be letters only";
+        $lastname_error = "Last name must be more than one character";
         $err_s = 1;
     } elseif (filter_var($lastname, FILTER_VALIDATE_INT)) {
         $lastname_error = "Last name must be letters only";

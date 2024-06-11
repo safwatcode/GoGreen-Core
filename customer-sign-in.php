@@ -57,24 +57,25 @@
                 echo $erroremail;
             }
             ?>
-            <input type="email" class="email" name="email" placeholder="Email">
             <?php
             if (isset($email_error)) {
                 echo $email_error;
             }
             ?>
-            <input type="password" class="pass" name="password" placeholder="Password" autofill = "no">
+            <input type="email" class="email" name="email" placeholder="Email">
             <?php
             if (isset($password_error)) {
                 echo $password_error;
             }
             ?>
-            <input type="tel" class="cus-phone" name="customer-phone" placeholder="Phone number">
+            <input type="password" class="pass" name="password" placeholder="Password" autofill="no">
             <?php
             if (isset($customer_phone_error)) {
                 echo $customer_phone_error;
             }
             ?>
+            <input type="tel" class="cus-phone" name="customer-phone" placeholder="Phone number">
+
             <button type="submit" class="submit">Sign in </button>
             <a href="forgot-password.html">
                 <div class="forgot-password">Forgot password? </div>

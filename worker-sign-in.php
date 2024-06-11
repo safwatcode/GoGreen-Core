@@ -58,23 +58,18 @@
                 echo $erroremail;
             }
             ?>
+            <?php
+            if (isset($email_error)) {
+                echo $email_error;
+            }
+            ?>
             <input type="email" class="email" name="email" placeholder="Email">
-            <div class="email-error">
-                <?php
-                if (isset($email_error)) {
-                    echo $email_error;
-                }
-                ?>
-            </div>
-
-            <input type="password" class="pass" name="password" placeholder="Password">
-            <div class="password-error">
-                <?php
+            <?php
                 if (isset($password_error)) {
                     echo $password_error;
                 }
                 ?>
-            </div>
+            <input type="password" class="pass" name="password" placeholder="Password">
             <button type="submit" class="submit"> Sign in </button>
             <a href="forgot-password.html">
                 <div class="forgot-password">Forgot password? </div>

@@ -6,10 +6,10 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
     $pass_md5 = md5($_POST['password']);
     $username = filter_input(INPUT_POST, 'username');
     $password = stripcslashes(strtolower($_POST['password']));
-    // $customer_phone = stripcslashes(strtolower($_POST['customer-phone']));
+    $customer_phone = stripcslashes(strtolower($_POST['customer-phone']));
     $email  = htmlentities(mysqli_real_escape_string($conn, $_POST['email']));
     $password  = htmlentities(mysqli_real_escape_string($conn, $_POST['password']));
-    // $customer_phone  = htmlentities(mysqli_real_escape_string($conn, $_POST['customer-phone']));
+    $customer_phone  = htmlentities(mysqli_real_escape_string($conn, $_POST['customer-phone']));
 }
 
 if (empty($email)) {
@@ -22,17 +22,14 @@ if (empty($password)) {
     $errors = 1;
     include('customer-sign-in.php');
 }
-// if (empty($customer_phone)) {
-//     $customer_phone_error = "<p  style = 'color: red;'> Enter your phone number</p>";
-//     $errors = 1;
-//     include('customer-sign-in.php');
-// }
+if (empty($customer_phone)) {
+    $customer_phone_error = "<p  style = 'color: red;'> Enter your phone number</p>";
+    $errors = 1;
+    include('customer-sign-in.php');
+}
 
-// else{
-//     include('sign-in.php');
-// }
 if (!isset($errors)) {
-    $sql = "SELECT `email` , `password` FROM `customer` WHERE `email` = '$email' AND `password` = '$pass_md5' ";
+    $sql = "SELECT `email` , `password` , `phone-number` FROM `customer` WHERE `email` = '$email' AND `password` = '$pass_md5' ";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
     // echo $row['email'];
@@ -40,7 +37,7 @@ if (!isset($errors)) {
     // echo $email;
     // echo $password;
 
-    if ($row['email'] === $email && $row['password'] === $pass_md5) {
+    if ($row['email'] === $email && $row['password'] === $pass_md5 && $row['phone-number'] === $customer_phone) {
         header('Location: customer-profile.html');
         exit();
     } else {
