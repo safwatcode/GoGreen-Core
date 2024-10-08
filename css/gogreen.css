@@ -147,7 +147,7 @@ a {
   border-bottom: 2px solid var(--secondary-color);
   color: var(--main-color);
   height: 100px;
-  /* padding-inline: 50px; */
+  padding-inline: 50px;
 }
 .nav h1 a {
   letter-spacing: 1px;
