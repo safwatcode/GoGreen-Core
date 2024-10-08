@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- ===================== Arabic Language ===================== -->
-<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
-<script>
-    Weglot.initialize({
-        api_key: 'wg_6c5321196b2403ec28a981605a02560b8'
-    });
-</script>
-<!-- ===================== END Arabic Language ===================== -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | SHATTABLY</title>
+    <title>GoGreen</title>
     <!-- Title Icon -->
-    <link rel="icon" type="image/png" href="images/SHATTABLYTitle.svg" />
+    <link rel="icon" type="image/png" href="images/GoGreen-Logo.png" />
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/Normalize.css">
     <!-- Font Awesome Library -->
@@ -25,8 +16,13 @@
         rel="stylesheet">
     <!-- Swiper's CSS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Cairo Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/shattably.css">
+    <link rel="stylesheet" href="css/gogreen.css">
 </head>
 
 <body>
@@ -35,17 +31,17 @@
     <nav class="navigation">
         <div class="nav">
             <h1>
-                <a href="index.html">SHATTABLY</a>
+                <a href="index.html" class="website-name">GoGreen</a>
             </h1>
             <a href="index.html" class="logo">
-                <img src="images/shattablyLogo.svg" alt="website-logo">
+                <img src="images/GoGreen-Logo.png" alt="website-logo">
             </a>
             <ul class="main-form">
                 <li>
-                    <a href="cus-wo-sign-in.html">Sign in</a>
+                    <a href="sign-in.html">Sign in</a>
                 </li>
                 <li>
-                    <a href="cus-wo-register.html">Register</a>
+                    <a href="register.html">Register</a>
                 </li>
             </ul>
         </div>
@@ -53,39 +49,33 @@
     </nav>
     <!-- ===================== END Navigation Bar ===================== -->
 
-    <!-- ===================== Slideshow ===================== -->
-    <div class="slide-show">
-        <img src="images/wallcovering_tools.jpg" alt="Presentation" draggable="false">
-        <div class="slide-show-text">
-            <h2>The first <span class="sp">EGYPTIAN</span> website</h2>
-            <p>For Local services and public utilities</p>
+    <!-- ===================== Landing ===================== -->
+    <div class="landing">
+        <div class="landing-container">
+            <div class="landing-text">
+                <h1>Pharaohs of Green Tech.</h1>
+            </div>
+            <div class="landing-image">
+                <img src="images/landing-image.png" alt="">
+            </div>
         </div>
     </div>
-    <!-- ===================== END Slideshow ===================== -->
+    <!-- ===================== END Landing ===================== -->
 
     <!-- ===================== Brief ===================== -->
     <div class="categories">
         <div class="main-heading">
             <h2>Who are we</h2>
-            <p> We Create, build and finish</p>
+            <p>Protectors Of water sources</p>
         </div>
         <div class="brief-container">
-            <img src="images/all-services2.svg" alt="">
+            <img src="images/GoGreen-Logo.png" alt="">
             <p class="brief">
-                <span class="website">SHATTABLY</span> <br>
-                It is an <span class="egy">Egyptian</span> website that serves customers who need to complete and finish
-                construction and finishing
-                works for units, whether houses, buildings or lands.
-                <br>
-                The website combines all construction services, from site engineering to blacksmithing, woodwork,
-                decoration, and more.
-                <br>
-                In its first phase, the website provides its services to the Egyptian and Arab community only, so we
-                serve
-                Egyptians and Arabs to enjoy its services and provide them to the fullest.
+                A group of engineering students looking to make a difference. We believe that innovation is
+                critical to addressing environmental challenges, and we're dedicated to developing smart solutions
+                that ensure the cleanliness and sustainability of our society by providing robotics services.
             </p>
         </div>
-
     </div>
     <!-- ===================== END Brief ===================== -->
 
@@ -139,7 +129,7 @@
                 <div class="icon-container">
                     <i class="fa-solid fa-home"></i>
                 </div>
-                <h3>Home and handy</h3>
+                <h3>Robotics</h3>
                 <p>
                     With the idea of imparting programming
                     knowledge, Mr. Sandeep Jain, an IIT
@@ -154,7 +144,7 @@
                 <div class="icon-container">
                     <i class="fa-solid fa-person-digging"></i>
                 </div>
-                <h3>Construction</h3>
+                <h3>Automation</h3>
                 <p>
                     With the idea of imparting programming
                     knowledge, Mr. Sandeep Jain, an IIT
@@ -169,7 +159,7 @@
                 <div class="icon-container">
                     <i class="fa-solid fa-paint-roller"></i>
                 </div>
-                <h3>Paints</h3>
+                <h3>Machine</h3>
                 <p>
                     With the idea of imparting programming
                     knowledge, Mr. Sandeep Jain, an IIT
@@ -583,8 +573,7 @@
                 </form>
                 <div class="info">
                     <h4>Get in touch with us</h4>
-                    <span class="phone">+20 112 528 5475</span>
-                    <span class="phone">+20 109 404 8383</span>
+                    <span class="phone">+20 106 542 2969</span>
                     <h4>We are here</h4>
                     <address> 17 Elsharaawy st. <br />Elsalam city, Cairo, <br />EGYPT.</address>
                 </div>
@@ -603,20 +592,30 @@
     <!-- ===================== Footer ===================== -->
     <footer>
         <div class="container">
-            <img src="images/SHATTABLYwhite.png" alt="Logo" />
+            <img src="images/GoGreen-Logo.png" alt="Logo" />
             <p>We are social</p>
             <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin"></i>
+                <a href="https://www.facebook.com/osamamoksallam?mibextid=ZbWKwL" target="_blank">
+                    <i class="fab fa-facebook-f" id="facebook"></i>
+                </a>
+                <a href="https://youtube.com/@gogreen_.e?si=nLSTmVXzvl1S7xCg" target="_blank">
+                    <i class="fa-brands fa-youtube" id="twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/gogreen_.e/" target="_blank">
+                    <i class="fab fa-instagram" id="instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/gogreenco" target="_blank">
+                    <i class="fab fa-linkedin" id="linkedin"></i>
+                </a>
+                <a href="https://www.tiktok.com/@gogreen_.e?_t=8pPiePRlbUX&_r=1" target="_blank">
+                    <i class="fab fa-tiktok" id="tiktok"></i>
+                </a>
             </div>
             <div class="policy">
                 <a href="terms.html" class="ter">Terms and Conditions</a>
                 <a href="privacy.html" class="pol">Privacy Policy</a>
             </div>
-            <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">SHATTABLY</a>. All Right
-                Reserved.
+            <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">GoGreen</a>. All Right Reserved.
             </div>
         </div>
     </footer>
@@ -631,7 +630,9 @@
 
 
     <!-- ===================== JS Files ===================== -->
+    <!-- Main Js file -->
     <script src="script.js"></script>
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/bab5d0d7f7.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>

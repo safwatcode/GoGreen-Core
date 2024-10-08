@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GoGreen | Sign in</title>
+    <!-- Title Icon -->
+    <link rel="icon" type="image/png" href="images/GoGreen-Logo.png" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/Normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Cairo Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/gogreen.css">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+
+
+<body>
+
+    <!-- ===================== Navigation Bar ===================== -->
+    <nav class="navigation">
+        <div class="nav">
+            <h1>
+                <a href="index.html" class="website-name">GoGreen</a>
+            </h1>
+            <a href="index.html" class="logo">
+                <img src="images/GoGreen-Logo.png" alt="website-logo">
+            </a>
+            <ul class="main-form">
+                <li>
+                    <a href="sign-in.html">Sign in</a>
+                </li>
+                <li>
+                    <a href="register.html">Register</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- ===================== END Navigation Bar ===================== -->
+
+    <div class="welcome">
+        <h2>Sign in</h2>
+    </div>
+
+    <div class="reg-form">
+        <img src="images/sign-in-photo.jpg" alt="website-logo">
+        <form action="" method="POST">
+            <input type="email" class="email" name="email" placeholder="Email">
+            <input type="password" class="pass" name="password" placeholder="Password">
+            <button type="submit" class="submit"> Sign in </button>
+            <a href="forgot-password.html">
+                <div class="forgot-password">Forgot password? </div>
+            </a>
+            <div class="new-account">Don't have and account? <a href="register.html">Register</a></div>
+        </form>
+    </div>
+
+
+
+    <!-- ===================== Footer ===================== -->
+    <footer>
+        <div class="container">
+            <img src="images/GoGreen-Logo.png" alt="Logo" />
+            <p>We are social</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="policy">
+                <a href="terms.html" class="ter">Terms and Conditions</a>
+                <a href="privacy.html" class="pol">Privacy Policy</a>
+            </div>
+            <div class="copyright"> &copy; <span id="date"></span> <a href="index.html">GoGreen</a>. All Right Reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- ===================== END Footer ===================== -->
+
+
+
+
+
+
+
+
+
+    <!-- ===================== JS Files ===================== -->
+    <!-- Main Js file -->
+    <script src="script.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bab5d0d7f7.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script> -->
+
+</body>
+
+</html>
